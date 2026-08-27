@@ -1,66 +1,76 @@
+<div align="center">
+
 # Hi there, I'm Morad Moqbel 👋
-### 🚀 Full-Stack & AI Software Engineer
+### 🚀 Founder & Solo Builder of [ApiPatch](https://github.com/MoradMoqbel/apipatch) | AI Agents & Developer Infrastructure Engineer
 
-> Building 0→1 production applications, autonomous AI agentic workflows, and scalable cloud architectures with **Python**, **TypeScript**, **Next.js**, and **Generative AI**.
+[![GitHub followers](https://img.shields.io/github/followers/MoradMoqbel?label=Follow&style=social)](https://github.com/MoradMoqbel)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/moradmoqbel)
+[![PyPI](https://img.shields.io/pypi/v/apipatch?color=brightgreen&label=ApiPatch%20PyPI)](https://pypi.org/project/apipatch/)
 
----
+<br/>
 
-### 🛠️ Tech Stack & Skills
+> *"Building autonomous, self-healing developer tools that maintain production codebases in the background."*
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js%2014-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS%20(Bedrock%20%26%20DynamoDB)-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![ElevenLabs](https://img.shields.io/badge/ElevenLabs%20Voice%20AI-FF4500?style=for-the-badge&logo=soundwave&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+</div>
 
 ---
 
-## 🌟 Featured Engineering Projects
+## ⚡ Featured Project: [ApiPatch](https://github.com/MoradMoqbel/apipatch)
+> **Autonomous AI Agent for API Breaking Changes & Self-Maintaining Codebases**
 
-### 🎯 Kafaah (كفاءة) — AI Applicant Tracking System & Voice Reports
-> **An AI-native ATS built for recruitment teams featuring automated candidate scoring, LLM fraud detection, and ElevenLabs voice report streaming.**
+[![PyPI version](https://img.shields.io/badge/pypi-v0.8.1-brightgreen.svg)](https://pypi.org/project/apipatch/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Action](https://img.shields.io/badge/GitHub%20Action-v0.8.1-blue.svg)](https://github.com/MoradMoqbel/apipatch)
+[![Tests Passing](https://img.shields.io/badge/Tests-Passing-brightgreen.svg)](https://github.com/MoradMoqbel/apipatch)
 
-📂 **Repository:** [github.com/MoradMoqbel/kafaah](https://github.com/MoradMoqbel/kafaah)  
-⚡ **Stack:** `Next.js 14 (App Router)` · `TypeScript` · `AWS Bedrock (Claude 3)` · `ElevenLabs API` · `DynamoDB` · `AWS EC2` · `nginx`
+Over **30% of cloud outages and broken builds** happen because third-party APIs update and silently break code. Tools like **Dependabot** only bump version numbers in config files—they **do not fix actual code logic**.
 
-#### ✨ Key Features:
-* 🤖 **AI-Powered Resume Analysis:** Evaluates PDF/DOCX resumes against job descriptions to produce a 0–100% match score, strengths breakdown, and gap analysis.
-* 🔊 **ElevenLabs Voice Reports:** Streams real-time audio summaries of candidate evaluations in Arabic & English using ElevenLabs' `eleven_multilingual_v2` model.
-* 🛡️ **LLM Fraud & Keyword-Stuffing Detection:** Uses custom prompt engineering to detect fabricated experience and keyword-stuffed resumes automatically.
-* 👁️ **Ethical Bias-Blind Mode:** Strips candidate names, gender, and demographic indicators before AI evaluation to ensure objective candidate shortlisting.
-* 📁 **Bulk Resume Processing:** Handles multi-file uploads with instant async parsing and interactive per-candidate result tabs.
-* 🎤 **Auto-Generated Interview Questions:** Tailors candidate-specific interview questions based on identified skill gaps.
-* 🌍 **Bilingual & RTL Native:** Full Arabic (RTL) and English UI with seamless i18n locale switching.
+**ApiPatch** monitors vendor changelogs, scans codebases (Python, JS, TS), grounds changes via live docs (`DocHunter™`), refactors code logic with AST syntax safety & self-healing loops, and opens ready-to-merge Pull Requests.
 
----
+```bash
+# Install & run in 2 seconds
+pip install apipatch
+apipatch scan .
+```
 
-### 🤖 ProcureFlow AI — Autonomous Supply Chain Agent
-> **Event-driven multi-agent system automating enterprise procurement and vendor evaluations.**
+### 🤖 CI/CD Integration with 1-Click GitHub Action
+```yaml
+- uses: MoradMoqbel/apipatch@v0.8.1
+  with:
+    mode: 'fix'
+    api_key: ${{ secrets.GEMINI_API_KEY }}
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    auto_pr: 'true'
+```
 
-🌐 **Live Demo:** [procure-flow-phi.vercel.app](https://procure-flow-phi.vercel.app)  
-⚡ **Stack:** `React 18` · `Vite` · `TailwindCSS` · `Agentic Orchestration`  
-* Auto-parses unformatted supplier RFQs and performs real-time multi-currency normalization.
-* Ranks vendors via multi-criteria scoring algorithms and streams live agent execution loops.
-
----
-
-### 🔄 AI Lead Qualification & CRM Automation Engine
-> **High-throughput asynchronous engine for real-time lead scoring and CRM webhook sync.**
-
-📂 **Repository:** [github.com/MoradMoqbel/crm-management](https://github.com/MoradMoqbel/crm-management)  
-⚡ **Stack:** `Python` · `FastAPI` · `Node.js` · `Google Gemini API` · `Pydantic` · `Redis` · `Webhooks`  
-* Automates SDR triage with structured AI lead scoring (HOT / WARM / COLD).
-* Features a zero-downtime heuristic fallback engine to handle LLM API rate limits cleanly under heavy traffic.
+🔗 **[Explore ApiPatch on GitHub →](https://github.com/MoradMoqbel/apipatch)**
 
 ---
 
-## 📬 Connect With Me
+## 🛠️ Tech Stack & Expertise
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/moradmoqbel)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MoradMoqbel)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:moradyunes2@gmail.com)
+* **Languages:** Python (AST, Metaprogramming, AsyncIO), TypeScript, JavaScript, SQL
+* **AI & Agentic Systems:** LLM Orchestration, DocHunter Grounding, Ephemeral Sandboxing, AST Self-Healing Loops
+* **AI Providers:** Gemini 2.5 Flash, Claude 3.7 / 3.5 Sonnet, GPT-4o, AWS Bedrock
+* **DevOps & Infrastructure:** GitHub Actions, CI/CD Workflows, Docker, PyPI Distribution, PostHog Analytics
+
+---
+
+## 📈 Real-Time Impact & Milestones
+
+- ⚡ **ApiPatch v0.8.1** shipped on PyPI & GitHub Actions.
+- 🌍 **330+ installs** across US, Singapore, Japan, UK, and Europe.
+- 🩺 Submitted autonomous refactoring Pull Requests to top-tier repositories (including Microsoft MarkItDown & Anthropic Skills).
+- 🏆 Applied to **Y Combinator** to scale autonomous software maintenance infrastructure.
+
+---
+
+## 📬 Connect with Me
+
+* 💼 **LinkedIn:** [linkedin.com/in/moradmoqbel](https://linkedin.com/in/moradmoqbel)
+* 🐙 **GitHub:** [@MoradMoqbel](https://github.com/MoradMoqbel)
+* ✉️ **Email:** `moradyunes2@gmail.com`
+
+<div align="center">
+  <sub>Built with ❤️ and relentless execution by Morad Moqbel</sub>
+</div>
